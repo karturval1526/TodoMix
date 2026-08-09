@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#111827">
 <meta name="description" content="TodoMix Importadora: tecnología, hogar, belleza, ferretería y juguetería. Los mejores precios del mercado.">
+<link rel="icon" type="image/jpeg" href="images/todomix-favicon.jpg">
 <title>TodoMix Importadora | Catálogo Online</title>
 <style>
 :root {
@@ -22,6 +23,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(16,24,40,.97);color:#fff
 .nav{max-width:1220px;margin:auto;padding:13px 18px;display:flex;align-items:center;gap:15px}
 .logo{font-size:27px;font-weight:950;letter-spacing:-1.2px;white-space:nowrap}
 .logo span{color:var(--cyan)}
+.brandLogo{display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
+.brandLogo img{display:block;width:150px;height:58px;object-fit:cover;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+
 .tag{font-size:11px;color:#cbd5e1;font-weight:750;letter-spacing:.7px}
 .searchWrap{margin-left:auto;position:relative;max-width:390px;flex:1}
 .search{width:100%;padding:12px 42px 12px 16px;border:0;border-radius:28px;outline:none;background:#fff;color:#111827}
@@ -32,6 +36,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(16,24,40,.97);color:#fff
   color:#fff;padding:64px 18px 78px}
 .heroIn{max-width:1220px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr;gap:35px;align-items:center}
 .badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,107,0,.98);padding:8px 13px;border-radius:22px;font-size:12px;font-weight:900}
+.heroLogo{width:min(330px,80%);height:115px;object-fit:cover;object-position:center;border-radius:14px;margin-bottom:16px;box-shadow:0 10px 35px rgba(0,0,0,.22)}
 .hero h1{font-size:clamp(38px,6vw,68px);line-height:.98;letter-spacing:-2px;margin:15px 0 13px}
 .hero h1 span{color:var(--cyan)}
 .hero p{max-width:670px;color:#dbe3ef;font-size:18px;line-height:1.55;margin:0 0 24px}
@@ -89,6 +94,7 @@ footer{background:#101828;color:#d0d5dd;padding:36px 18px;text-align:center}
 .modalWa{margin-top:auto;text-decoration:none;background:var(--green);color:#fff;text-align:center;padding:14px;border-radius:13px;font-weight:950}
 @media(max-width:1050px){.grid{grid-template-columns:repeat(3,1fr)}.heroIn{grid-template-columns:1.2fr 1fr}}
 @media(max-width:760px){
+  .brandLogo img{width:132px;height:50px}.heroLogo{width:270px;height:95px}
   .nav{flex-wrap:wrap}.tag{display:none}.searchWrap{order:3;flex-basis:100%;max-width:none}
   .hero{padding:48px 18px 70px}.heroIn{grid-template-columns:1fr}.heroCard{display:none}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
@@ -96,7 +102,8 @@ footer{background:#101828;color:#d0d5dd;padding:36px 18px;text-align:center}
   .sectionHead{align-items:flex-start;flex-direction:column}.tools{width:100%}.select{width:100%}
   .modal{grid-template-columns:1fr;max-height:92vh;overflow:auto}.modalImg{min-height:260px;height:260px}.modalImg img{max-height:235px}.modalInfo{padding:20px}
 }
-@media(max-width:430px){.hero h1{letter-spacing:-1.4px}.grid{grid-template-columns:1fr 1fr}.pic{height:145px}.body{padding:11px}.cardActions{grid-template-columns:1fr}.more{padding:10px}.float{right:10px;bottom:10px}.shareFloat{left:10px;bottom:10px}}
+@media(max-width:430px){.heroLogo{width:min(330px,80%);height:115px;object-fit:cover;object-position:center;border-radius:14px;margin-bottom:16px;box-shadow:0 10px 35px rgba(0,0,0,.22)}
+.hero h1{letter-spacing:-1.4px}.grid{grid-template-columns:1fr 1fr}.pic{height:145px}.body{padding:11px}.cardActions{grid-template-columns:1fr}.more{padding:10px}.float{right:10px;bottom:10px}.shareFloat{left:10px;bottom:10px}}
 </style>
 </head>
 <body>
@@ -104,7 +111,7 @@ footer{background:#101828;color:#d0d5dd;padding:36px 18px;text-align:center}
 
 <header>
   <div class="nav">
-    <div class="logo">Todo<span>Mix</span></div>
+    <a class="brandLogo" href="#" aria-label="TodoMix Importadora"><img src="images/todomix-logo.jpg" alt="TodoMix Importadora"></a>
     <div class="tag">IMPORTADORA</div>
     <div class="searchWrap">
       <input id="q" class="search" placeholder="🔎 Buscar producto..." aria-label="Buscar producto">
@@ -116,6 +123,7 @@ footer{background:#101828;color:#d0d5dd;padding:36px 18px;text-align:center}
 <section class="hero">
   <div class="heroIn">
     <div>
+      <img class="heroLogo" src="images/todomix-logo.jpg" alt="TodoMix Importadora" loading="eager">
       <span class="badge">🛍️ CATÁLOGO ONLINE</span>
       <h1>Todo lo que buscas,<br><span>en un solo lugar.</span></h1>
       <p>Descubre nuestra selección de productos de Tecnología, Hogar, Belleza, Ferretería y Juguetería. Elige tu producto y haz tu pedido directamente por WhatsApp.</p>
